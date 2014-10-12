@@ -38,6 +38,12 @@ ImageDownloader.downloadImageWithSize(urlImage: "http://fc01.deviantart.net/fs70
 }
 ```
 
+You can use a UIImageView extension for download a image as well. The image will be displayed on the UIImageView automatically after completion.
+
+```Swift
+imageView.downloadImage("http://fc01.deviantart.net/fs70/i/2014/284/2/0/raiden_by_keprion-d82epij.jpg")
+```
+
 <h1 align="center">Author</h1>
 Rémi ROBERT, remirobert33530@gmail.com
 
