@@ -19,3 +19,13 @@ ImageDownloader.downloadImage(urlImage: urlImage) { (imageDownloaded) -> () in
   imageView.image = imageDownloaded
 }
 ```
+
+You can use a another method for fit the UIImage with a size:
+
+```Swift
+ImageDownloader.downloadImageWithSize(urlImage: "http://fc01.deviantart.net/fs70/i/2014/284/2/0/raiden_by_keprion-d82epij.jpg", sizeImage: CGSizeMake(200, 200))
+{ (imageDownloaded) -> () in
+  imageView.image = imageDownloaded
+  imageView.contentMode = UIViewContentMode.ScaleAspectFill
+}
+```
