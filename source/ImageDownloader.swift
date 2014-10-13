@@ -103,4 +103,11 @@ extension UIImageView {
             self.image = imageDownloaded
         }
     }
+    
+    func downloadImageWithSize(urlImage: String) {
+        ImageDownloader.downloadImageWithSize(urlImage: urlImage, sizeImage:self.frame.size)
+            { (imageDownloaded) -> () in
+            self.image = imageDownloaded
+        }
+    }
 }
