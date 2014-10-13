@@ -6,8 +6,8 @@ ImageDownloader allows you to download image from url on asynchronous thread.
 All images after download are stored in memory.
 The next time the image will be loaded from the disk, it's faster ! Very usefull for a photo app, or social app like Facebook.
 
-ImageDownloader uses MD5 for store the image according to the url.
-For use ImageDownloader, you have to add the following line to your Bridging Header:
+ImageDownloader uses **MD5** for store the image according to the url.
+For use ImageDownloader, you have to add the following line to your **Bridging Header**:
 
 ```Objective-c
 #import <CommonCrypto/CommonCrypto.h>
@@ -36,6 +36,12 @@ ImageDownloader.downloadImageWithSize(urlImage: "http://fc01.deviantart.net/fs70
   imageView.image = imageDownloaded
   imageView.contentMode = UIViewContentMode.ScaleAspectFill
 }
+```
+
+You can use a UIImageView extension for download a image as well. The image will be displayed on the UIImageView automatically after completion.
+
+```Swift
+imageView.downloadImage("http://fc01.deviantart.net/fs70/i/2014/284/2/0/raiden_by_keprion-d82epij.jpg")
 ```
 
 <h1 align="center">Author</h1>
